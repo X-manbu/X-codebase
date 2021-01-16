@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div>
+    <input type="text" id="username"><br>
+    <input type="text" id="age"><br>
+    <input type="button" value="提交" id="btn">
+  </div>
+
+  <script>
+    let username = document.getElementById('username');
+    let age = document.getElementById('age');
+    let btn = document.getElementById('btn');
+    btn.onclick = function() {
+      let xhr = new XMLHttpRequest();
+      let params = 'username' + username.value + 'age' + age.value;
+      xhr.open('get', 'http://localhost:3000/get');
+      xhr.send();
+      xhr.onload = function() {
+        console.log(xhr.responseText);
+      }
+    }
+  </script>
+</body>
+
+</html>

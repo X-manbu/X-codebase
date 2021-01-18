@@ -5,7 +5,11 @@ const Rule = () =>
 const CustomRule = () =>
   import ('../views/ruleForm/customRule')
 const Debugger = () =>
-  import ('../views/debugger/index')
+  import ('../views/utils/debugger/index')
+const Qs = () =>
+  import ('../views/utils/qs/index')
+const Map = () =>
+  import ('../views/utils/map/index')
 
 Vue.use(VueRouter)
 
@@ -28,6 +32,16 @@ const routes = [{
     path: '/debugger',
     name: 'Debugger',
     component: Debugger
+  },
+  {
+    path: '/qs',
+    name: 'Qs',
+    component: Qs
+  },
+  {
+    path: '/map',
+    name: 'Map',
+    component: Map
   }
 ]
 

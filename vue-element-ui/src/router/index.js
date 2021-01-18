@@ -10,6 +10,8 @@ const Qs = () =>
   import ('../views/utils/qs/index')
 const Map = () =>
   import ('../views/utils/map/index')
+const Upload = () =>
+  import ('../views/utils/upload/index')
 
 Vue.use(VueRouter)
 
@@ -42,6 +44,11 @@ const routes = [{
     path: '/map',
     name: 'Map',
     component: Map
+  },
+  {
+    path: '/upload',
+    name: 'Upload',
+    component: Upload
   }
 ]
 

@@ -28,6 +28,14 @@
           <el-menu-item index="2-4-2">选项2</el-menu-item>
         </el-submenu> -->
       </el-submenu>
+      <el-submenu index="3">
+          <template slot="title">表格</template>
+          <el-menu-item index='3-1' route="/paination">分页</el-menu-item>
+      </el-submenu>
+      <el-submenu index="4">
+          <template slot="title">Vue</template>
+          <el-menu-item index='4-1' route="/route">route</el-menu-item>
+      </el-submenu>
     </el-menu>
   </div>
 </template>

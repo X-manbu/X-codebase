@@ -5,6 +5,7 @@ import 'element-ui/lib/theme-chalk/index.css';
 import qs from 'qs'
 import App from './App.vue'
 import router from './router'
+import coordtransform from 'coordtransform'
 
 Vue.use(ElementUI);
 Vue.use(VueAMap);
@@ -16,6 +17,7 @@ VueAMap.initAMapApiLoader({
 });
 
 Vue.prototype.$qs = qs
+Vue.prototype.coordtransform = coordtransform
 Vue.config.productionTip = false
 
 new Vue({

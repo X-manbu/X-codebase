@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <input type="button" id="btn" value="input" />
+  <!-- <a href="https://www.baidu.com" id="link">百度</a> -->
+  <script>
+    let btn = document.getElementById('btn');
+    // let link = document.getElementById('link');
+    // link.onclick = function(event) {
+    //   event.preventDefault();
+    // }
+    btn.onclick = function() {
+      alert('btn.onclick')
+    }
+
+    document.body.addEventListener('click', function() {
+      alert('document.body')
+    })
+
+    document.onclick = function() {
+      alert('document.onclick')
+    }
+
+    window.onresize = function() {
+      alert('加载完成')
+    }
+  </script>
+</body>
+
+<style>
+
+</style>
+
+</html>

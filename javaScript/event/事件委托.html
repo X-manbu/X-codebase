@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div>
+    <ul id="ul1">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ul>
+  </div>
+  <script>
+    // 常规事件监听
+    // window.onload = function() {
+    //   let ul1 = document.getElementById('ul1');
+    //   let lis = ul1.getElementsByTagName('li');
+    //   console.log(lis);
+    //   for (let i = 0; i < lis.length; i++) {
+    //     lis[i].onclick = function() {
+    //       alert('我是：' + (i + 1));
+    //     }
+    //   }
+    // }
+
+    // 使用事件委托进行监听
+    window.onload = function() {
+      let ul1 = document.getElementById('ul1');
+      ul1.onclick = function(ev) {
+        var ev = ev || window.event;
+        var target = ev.target || ev.srcElement;
+        if (target.nodeName.toLowerCase() == 'li') {
+          alert('触发了事件:' + target.innerHTML)
+        };
+      }
+    }
+  </script>
+</body>
+
+</html>

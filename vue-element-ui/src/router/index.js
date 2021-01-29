@@ -1,3 +1,4 @@
+import { Pagination } from 'element-ui'
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 const Rule = () =>
@@ -12,6 +13,14 @@ const Map = () =>
   import ('../views/utils/map/index')
 const Upload = () =>
   import ('../views/utils/upload/index')
+const Page = () =>
+  import ('../views/table/pagination')
+const Bar = () =>
+  import ('../views/vueRoute/bar')
+const Foo = () =>
+  import ('../views/vueRoute/foo')
+const Route = () =>
+  import ('../views/vueRoute/route')
 
 Vue.use(VueRouter)
 
@@ -49,7 +58,27 @@ const routes = [{
     path: '/upload',
     name: 'Upload',
     component: Upload
-  }
+  },
+  {
+    path: '/paination',
+    name: 'Paination',
+    component: Page
+  },
+  {
+    path: '/route',
+    name: 'Route',
+    component: Route
+  },
+  {
+    path: '/bar',
+    name: 'Bar',
+    component: Bar
+  },
+  {
+    path: '/foo',
+    name: 'Foo',
+    component: Foo
+  },
 ]
 
 const router = new VueRouter({

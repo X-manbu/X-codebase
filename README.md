@@ -12,24 +12,18 @@
 
 ## views/utils/map
 
-地图组件
-使用地图组件,需要先安装插件，并在 main.js 中进行配置
-1、安装插件
-npm install vue-amap --save
-2、引入组件
-import VueAMap from 'vue-amap'
+### 地图组件
+
+使用地图组件,需要先安装插件，并在 main.js 中进行配置  
+1、安装插件  
+npm install vue-amap --save  
+2、引入组件  
+import VueAMap from 'vue-amap'  
 Vue.use(VueAMap);
-3、进行配置
-VueAMap.initAMapApiLoader({
-key: 'your amap key',
-plugin: ['AMap.Autocomplete', 'AMap.PlaceSearch', 'AMap.Scale', 'AMap.OverView', 'AMap.ToolBar', 'AMap.MapType', 'AMap.PolyEditor', 'AMap.CircleEditor'],
-// 默认高德 sdk 版本为 1.4.4
-v: '1.4.4'
-});
 
 ## 地图转换方法
 
-1、安装插件
+1、安装插件  
 npm install coordtransform --save
-2、封装转换方法 src/utils/map.js
+2、封装转换方法 src/utils/map.js  
 使用时直接引用即可

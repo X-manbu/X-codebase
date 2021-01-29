@@ -24,6 +24,6 @@ Vue.use(VueAMap);
 ## 地图转换方法
 
 1、安装插件  
-npm install coordtransform --save
+npm install coordtransform --save  
 2、封装转换方法 src/utils/map.js  
 使用时直接引用即可

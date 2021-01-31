@@ -1,6 +1,6 @@
 <template>
     <div class='app-container'>
-        <h1>foo</h1>
+        <h3>User</h3>
     </div>
 </template>
 
@@ -11,7 +11,7 @@ export default {
         return {
 
         }
-    },
+    }
 }
 </script>
 

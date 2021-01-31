@@ -12,7 +12,7 @@
 
 **匹配括号**：Bracket Pair Colorizer
 
-**图标**：Material Icon Theme 
+**图标**：Material Icon Theme
 
 **调试：**Debugger for Chrome
 
@@ -26,11 +26,9 @@
 
 **代码跳转**： vscode-elm-jump
 
-**css跳转**：Vue CSS Peek
+**css 跳转**：Vue CSS Peek
 
 **变量跳转**：vue-helper
-
-
 
 ## 快捷键
 

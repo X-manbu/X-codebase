@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- hide-required-asterisk 关闭必填字段的星号 -->
-    <el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm" label-position="right" hide-required-asterisk="false" label-width="100px" class="demo-ruleForm">
+    <el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm" label-position="right" hide-required-asterisk label-width="100px" class="demo-ruleForm">
       <el-form-item label="密码" prop="pass" inline-message="true">
         <el-input type="password" v-model="ruleForm.pass" autocomplete="off"></el-input>
       </el-form-item>

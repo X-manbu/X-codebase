@@ -1,19 +1,18 @@
 <template>
   <div class="app-container">
+      <!-- <div>{{ counter.count }}</div> -->
+      <!-- <button @click="de()">-</button>
+      <button @click="add()">+</button> -->
       <el-input v-model="input" placeholder=""></el-input>
-      <div class="bg bg1"></div>
-      <div>300</div>
-      <div class="bg bg2"></div>
-      <div>600</div>
-      <div class="bg bg3"></div>
-      <div>900</div>
   </div>
 </template>
 
 <script>
+import { store } from '@/store/myStore'
 export default {
     data(){
         return{
+            counter:store.state,
             input:''
         }
     },
@@ -22,6 +21,14 @@ export default {
             console.log('监听的数据');
             console.log(val);
         },
+    },
+    methods:{
+        add(){
+            store.addCountAction();
+        },
+        de(){
+            store.downCountAction();
+        }
     }
 }
 </script>

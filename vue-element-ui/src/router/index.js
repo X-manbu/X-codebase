@@ -1,14 +1,13 @@
-import { Pagination } from "element-ui";
 import Vue from "vue";
 import VueRouter from "vue-router";
-const { isNavigationFailure, NavigationFailureType } = VueRouter;
 const Menu = () => import("@/components/menu/index");
-const Rule = () => import("@/views/ruleForm/rule");
-const CustomRule = () => import("@/views/ruleForm/customRule");
+const Rule = () => import("@/views/rule/rule");
+const CustomRule = () => import("@/views/rule/customRule");
 const Debugger = () => import("@/views/utils/debugger/index");
 const Qs = () => import("@/views/utils/qs/index");
 const Map = () => import("@/views/utils/map/index");
 const Upload = () => import("@/views/utils/upload/index");
+const Count = () => import("@/views/utils/count/index");
 const Page = () => import("@/views/table/pagination");
 const Route = () => import("@/views/route/index");
 const User = () => import("@/views/route/user");
@@ -64,6 +63,11 @@ const routes = [
                 path: "upload",
                 name: "Upload",
                 component: Upload,
+            },
+            {
+                path: "count",
+                name: "Count",
+                component: Count,
             },
         ],
     },

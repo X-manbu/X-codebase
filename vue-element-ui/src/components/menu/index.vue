@@ -15,6 +15,7 @@
         <el-menu-item index='1-2' route="/utils/qs">qs</el-menu-item>
         <el-menu-item index='1-3' route="/utils/map">地图</el-menu-item>
         <el-menu-item index='1-4' route="/utils/upload">上传</el-menu-item>
+        <el-menu-item index='1-5' route="/utils/count">计数</el-menu-item>
       </el-submenu>
       <el-submenu index='2'>
         <template slot="title">表单验证</template>
@@ -36,6 +37,10 @@
           <template slot="title">Vue</template>
           <el-menu-item index='4-1' route="/route/route">route</el-menu-item>
           <el-menu-item index='4-2' route="/route/user">user</el-menu-item>
+      </el-submenu>
+      <el-submenu index="5">
+          <template slot="title">布局</template>
+          <el-menu-item index='5-1' route="/route/route">dashboard</el-menu-item>
       </el-submenu>
     </el-menu>
     <router-view />

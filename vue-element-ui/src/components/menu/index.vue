@@ -40,7 +40,7 @@
       </el-submenu>
       <el-submenu index="5">
           <template slot="title">布局</template>
-          <el-menu-item index='5-1' route="/route/route">dashboard</el-menu-item>
+          <el-menu-item index='5-1' route="/layout/dashboard">dashboard</el-menu-item>
       </el-submenu>
     </el-menu>
     <router-view />

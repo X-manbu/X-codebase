@@ -11,6 +11,7 @@ const Count = () => import("@/views/utils/count/index");
 const Page = () => import("@/views/table/pagination");
 const Route = () => import("@/views/route/index");
 const User = () => import("@/views/route/user");
+const Dashboard = () => import("@/views/layout/dashboard/index");
 
 Vue.use(VueRouter);
 // 解决ElementUI导航栏中的vue-router在3.0版本以上重复点菜单报错问题
@@ -98,6 +99,17 @@ const routes = [
                     default: User,
                     main: User,
                 },
+            },
+        ],
+    },
+    {
+        path: "/layout",
+        component: Menu,
+        children: [
+            {
+                path: "dashboard",
+                name: "Dashboard",
+                component: Dashboard,
             },
         ],
     },

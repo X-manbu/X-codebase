@@ -27,3 +27,11 @@ Vue.use(VueAMap);
 npm install coordtransform --save  
 2、封装转换方法 src/utils/map.js  
 使用时直接引用即可
+
+## 使用 dashboard 仪表板需安装以下插件
+
+```bash
+    npm install echarts@4.2.1 --save
+    npm install node-sass --save
+    npm install vue-count-to --save
+```

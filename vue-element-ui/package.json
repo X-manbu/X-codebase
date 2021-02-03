@@ -8,11 +8,16 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "coordtransform": "^2.1.2",
     "core-js": "^3.6.5",
+    "echarts": "^4.2.1",
     "element-ui": "^2.14.1",
+    "node-sass": "^5.0.0",
     "qs": "^6.9.6",
+    "sass-loader": "^10.1.1",
     "vue": "^2.6.11",
     "vue-amap": "^0.5.10",
+    "vue-count-to": "^1.0.13",
     "vue-router": "^3.2.0",
     "vuex": "^3.6.2",
     "xlsx": "^0.16.9"

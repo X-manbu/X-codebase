@@ -2,8 +2,9 @@
     <div class='app-container'>
         <h2>Route</h2>
         <input type="button" value="登录" @click="iSubmit"><br>
-        <router-link to="/route/user">User</router-link> |
-        <router-link to="/table/paination">Paination</router-link>
+        <el-button @click="routeTo('/route/route/foo')">foo</el-button>
+        <el-button @click="routeTo('/route/route/bar')">bar</el-button>
+        <router-view />
     </div>
 </template>
 
@@ -11,18 +12,15 @@
 export default {
     data(){
         return {
-            input:''
+
         }
     },
     methods:{
-        toUser(){
-            this.$router.push({
-                name:'User',
-                params: { userId: '123' }
-            })
-        },
         iSubmit(){
             sessionStorage.setItem('isLogin',true);
+        },
+        routeTo(path){
+            this.$router.push({path:path});
         }
     }
 }

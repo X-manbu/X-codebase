@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>  
+</body>
+<style>
+#content{
+    position: relative;
+    height: 550px;
+    width: 100%;
+    background: gray;
+}
+
+.left{
+    height: 500px;
+    width: 100%;
+    margin-left: -200px;
+    float: left;
+    background: yellow;
+}
+
+.right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 200px;
+    width: 200px;
+    background: red;
+}
+</style>
+</html>

@@ -10,8 +10,12 @@ const Upload = () => import("@/views/utils/upload/index");
 const Count = () => import("@/views/utils/count/index");
 const Page = () => import("@/views/table/pagination");
 const Route = () => import("@/views/route/index");
+const Foo = () => import("@/views/route/other/foo");
+const Bar = () => import("@/views/route/other/bar");
 const User = () => import("@/views/route/user");
 const Dashboard = () => import("@/views/layout/dashboard/index");
+const Center = () => import("@/views/layout/center/index");
+const Style = () => import("@/views/style/index");
 
 Vue.use(VueRouter);
 // 解决ElementUI导航栏中的vue-router在3.0版本以上重复点菜单报错问题
@@ -91,6 +95,18 @@ const routes = [
                 path: "route",
                 name: "Route",
                 component: Route,
+                children: [
+                    {
+                        path: "foo",
+                        name: "Foo",
+                        component: Foo,
+                    },
+                    {
+                        path: "bar",
+                        name: "Bar",
+                        component: Bar,
+                    },
+                ],
             },
             {
                 path: "user",
@@ -110,6 +126,22 @@ const routes = [
                 path: "dashboard",
                 name: "Dashboard",
                 component: Dashboard,
+            },
+            {
+                path: "center",
+                name: "Center",
+                component: Center,
+            },
+        ],
+    },
+    {
+        path: "/style",
+        component: Menu,
+        children: [
+            {
+                path: "/style",
+                name: "Style",
+                component: Style,
             },
         ],
     },

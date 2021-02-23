@@ -41,6 +41,11 @@
       <el-submenu index="5">
           <template slot="title">布局</template>
           <el-menu-item index='5-1' route="/layout/dashboard">dashboard</el-menu-item>
+          <el-menu-item index='5-2' route="/layout/center">垂直居中</el-menu-item>
+      </el-submenu>
+      <el-submenu index="6">
+          <template slot="title">样式</template>
+          <el-menu-item index='6-1' route="/style">关闭按钮</el-menu-item>
       </el-submenu>
     </el-menu>
     <router-view />
